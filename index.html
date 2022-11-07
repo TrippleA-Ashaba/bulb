@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<title>Document</title>
+	</head>
+	<body class="bg-black">
+		<div id="app">
+			<div v-if="bulbOff" class="bulb_off">
+				<img src="bulb_off.jpg" class="img_off" width="295" />
+			</div>
+
+			<div v-else="!blubOff" class="bulb_on">
+				<img src="bulb_on.jpg" class="img_on" />
+			</div>
+
+			<div class="d-flex justify-content-center">
+				<button @click="bulbOff=!bulbOff" class="btn btn-light">ON</button>
+			</div>
+		</div>
+
+		<script src="vue.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
